@@ -1,4 +1,4 @@
-# Wg-POOL
+# Programare Orientata pe Obiecte (An 1 Sem 2) - Proiect Laborator - Whiteboard
 
 ![](assets/demo.gif)
 
