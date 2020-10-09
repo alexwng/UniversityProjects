@@ -1,4 +1,4 @@
-# Tehnici Web - Proiect Examen - My Survery Room
+# Tehnici Web (An 1 Sem 2) - Proiect Examen - My Survery Room
 
 ## [Cerinte](https://docs.google.com/document/d/1VkvudUDyHGPTopwdGc1qgzy4evD50UP5nRIcWbJqOWk/edit)
 
