@@ -1,4 +1,4 @@
-# Proiect Laborator - My Cooking Book
+# Tehnici Web (An 1 Sem 2) - Proiect Laborator - My Cooking Book
 
 ### Cerinte
 
