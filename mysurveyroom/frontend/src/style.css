@@ -1,0 +1,225 @@
+body {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 60px auto 50px;
+    grid-template-areas:
+        ". header ."
+        ". main ."
+        ". footer .";
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    /* background-color: red; */
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+        "chat-title proposals-title"
+        "chat-section proposals-section";
+}
+
+.chat-title {
+    grid-area: chat-title;
+}
+
+.proposals-title {
+    grid-area: proposals-title;
+}
+
+.chat-section {
+    grid-area: chat-section;
+    display: grid;
+    background-color: #ededed;
+    grid-template-columns: 5px 4fr 5px 1fr 5px;
+    grid-template-rows: 5px 635px 5px 100px 5px;
+    grid-template-areas:
+        ". . . . ."
+        ". messages . users ."
+        ". . . . ."
+        ". chat-input . chat-settings ."
+        ". . . . .";
+    /* border-top: 2px solid #ccc; */
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.proposals-section {
+    grid-area: proposals-section;
+    display: grid;
+    background-color: #ededed;
+    grid-template-columns: 5px auto 5px;
+    grid-template-rows: 5px 635px 5px 100px 5px;
+    grid-template-areas:
+        ". . ."
+        ". proposals-list ."
+        ". . ."
+        ". proposals-input ."
+        ". . .";
+    /* border-top: 2px solid #ccc; */
+    border-left: 2px solid #ccc;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.messages {
+    grid-area: messages;
+    overflow: auto;
+    background-color: #ededed;
+}
+
+.users {
+    grid-area: users;
+    overflow: auto;
+    border-left: 2px solid #ccc;
+    background-color: #ededed;
+}
+
+.chat-input {
+    grid-area: chat-input;
+    border-top: 2px solid #ccc;
+    background-color: #ededed;
+    display: grid;
+    grid-template-columns: 5px auto 20px;
+    grid-template-rows: 10px 1fr 1fr 5px;
+    grid-template-areas:
+        ". . ."
+        ". emoji-input ."
+        ". input-form ."
+        ". . .";
+}
+
+.emoji-input {
+    grid-area: emoji-input;
+}
+
+.input-form {
+    grid-area: input-form;
+}
+
+.chat-settings {
+    grid-area: chat-settings;
+    border-top: 2px solid #ccc;
+    background-color: #ededed;
+}
+
+.proposals-list {
+    grid-area: proposals-list;
+    overflow: auto;
+    background-color: #ededed;
+}
+
+.proposals-input {
+    grid-area: proposals-input;
+    border-top: 2px solid #ccc;
+    background-color: #ededed;
+}
+
+.message-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.message {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.users {
+    padding: 5px;
+}
+
+.round-input {
+    /* height: 75px; */
+    /* margin-left: 5px; */
+    /* margin-top: 10px; */
+    padding: 5px 5px;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: none;
+    border-radius: 16px;
+}
+
+.my-message {
+    background-color: #fdd3e9;
+}
+
+.survey {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding-top: 5px;
+    background-color: white;
+}
+
+.marginLikeNo {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+body {
+    background-image: url("sakura.png");
+}
+
+.small-pad {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.round-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.bigger-btn {
+    font-size: 20px;
+}
+
+.liked {
+    background-color: green;
+}
+
+.disliked {
+    background-color: red;
+}
+
+.max-width {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.custom-size {
+    width: 98%;
+    height: 32px;
+}
+
+.flex-with-btn {
+    display: flex;
+}
+
+.send-btn {
+    margin-left: 5px;
+}

@@ -1,0 +1,16 @@
+{
+  "short_name": "Recipes",
+  "name": "My Cooking Book",
+  "description": "A list of recipes",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "burger.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "background_color": "#24292e",
+  "display": "standalone",
+  "theme_color": "#24292e"
+}

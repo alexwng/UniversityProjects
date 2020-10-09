@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title id="tab-title">My Survey Room</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <span id="ch-1">M</span><span id="ch-3">y</span>
+                <span id="ch-5">S</span><span id="ch-7">u</span
+                ><span id="ch-9">r</span><span id="ch-11">v</span
+                ><span id="ch-12">e</span><span id="ch-10">y</span>
+                <span id="ch-8">R</span><span id="ch-6">o</span
+                ><span id="ch-4">o</span><span id="ch-2">m</span>
+            </h1>
+        </header>
+        <main>
+            <div class="chat-title">
+                <h2>Chat</h2>
+            </div>
+            <div class="chat-section">
+                <div class="messages" id="messages">
+                    <!-- <div class="message">
+                        <div class="message-box">
+                            <div class="username-chat">
+                                Numele de utilizator
+                            </div>
+                            <div class="datetime">23/03/2016 20:40</div>
+                        </div>
+                        <p>A message text</p>
+                    </div> -->
+                </div>
+                <div class="users">
+                    Users:
+                    <ul id="user-list"></ul>
+                </div>
+                <div class="chat-input">
+                    <div class="emoji-input" id="emoji-input">
+                        <button class="bigger-btn round-button" type="button">
+                            🙂
+                        </button>
+                        <button class="bigger-btn round-button" type="button">
+                            😷
+                        </button>
+                        <button class="bigger-btn round-button" type="button">
+                            🤔
+                        </button>
+                        <button class="bigger-btn round-button" type="button">
+                            💩
+                        </button>
+                        <button class="bigger-btn round-button" type="button">
+                            🤓
+                        </button>
+                    </div>
+                    <div class="input-form">
+                        <form class="flex-with-btn" id="input-form">
+                            <input
+                                type="text"
+                                placeholder="Scrie text"
+                                id="input-message-text"
+                                class="round-input"
+                            />
+                            <button class="send-btn round-button" type="submit">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="chat-settings">
+                    <!-- <p class="small-pad">
+                        Hello, !
+                    </p> -->
+                    <button
+                        class="bigger-btn round-button max-width"
+                        type="submit"
+                        id="change-name-btn"
+                    >
+                        Change name: <span id="my-name">name placeholder</span>
+                    </button>
+                    <p class="small-pad">Your text color is:</p>
+                    <input
+                        class="round-button custom-size"
+                        type="color"
+                        id="my-text-color"
+                        value="#000000"
+                    />
+                </div>
+            </div>
+            <div class="proposals-title">
+                <h2>Survey</h2>
+            </div>
+            <div class="proposals-section">
+                <div class="proposals-list" id="proposals-list">
+                    <!-- <div class="survey">
+                        <p>Textul</p>
+                        <button type="button" class="liked">👍</button>
+                        <span>32</span>
+                        <button type="button" class="disliked">👎</button>
+                        <span>32</span>
+                    </div> -->
+                </div>
+                <div class="proposals-input">
+                    <br />
+                    <br />
+                    <form class="flex-with-btn" id="survey-form">
+                        <input
+                            type="text"
+                            placeholder="Scrie propunere"
+                            id="input-survey-text"
+                            class="round-input"
+                        />
+                        <button class="send-btn round-button" type="submit">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">Footer</footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

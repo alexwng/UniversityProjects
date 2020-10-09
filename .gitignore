@@ -1,0 +1,8 @@
+.DS_Store
+
+todo.txt
+myapp-whiteboard
+
+bin/
+node_modules/
+.vscode/

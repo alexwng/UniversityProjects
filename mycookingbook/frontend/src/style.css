@@ -1,0 +1,157 @@
+body {
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+section,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.imgClass {
+  max-width: 100%;
+  max-height: 512px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.textareaClass {
+  width: 90%;
+  height: 512px;
+  margin: 5px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.buttonClass {
+  width: 97%;
+  height: 40px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.navUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #24292e;
+}
+
+.navUlLi {
+  float: left;
+  margin-right: 5px;
+}
+
+.navA {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navA:hover {
+  color: gray;
+}
+
+.recipeListUl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 5px;
+}
+
+.sectionLi {
+  list-style-type: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d1d5da;
+  border-radius: 10px;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.gridSR {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.padding5 {
+  padding: 5px;
+}
+
+.inline {
+  display: inline-block;
+  margin: 5px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.details {
+  margin-top: 5px;
+}
+
+.time {
+  margin-left: 5px;
+}
+
+.formStyle {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.inputStyle {
+  width: 98%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.ingredients-item {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .recipeListUl,
+  .gridSR {
+    grid-template-columns: 1fr;
+  }
+
+  .navUlLi {
+    clear: both;
+    width: 100%;
+    margin: 0;
+  }
+
+  .ingredients-item {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1280px) {
+  .recipeListUl {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .gridSR,
+  .recipeListUl,
+  .formStyle {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
